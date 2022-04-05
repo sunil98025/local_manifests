@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+ <!-- Remotes -->
+ <remote name="monu70152" 
+         fetch="https://github.com/monu70152" />
+
+ <!-- Trees -->
+
+ <!-- Device Tree -->
+ <project path="device/asus/X00TD" 
+          name="device_asus_X00TD.git" 
+          remote="monu70152" 
+          revision="arcana" /> 
+
+ <!-- Common Tree -->
+ <project path="device/asus/sdm660-common" 
+          name="device_asus_sdm660-common.git" 
+          remote="monu70152" 
+          revision="arcana" />
+
+ <!-- Vendor Tree -->
+ <project path="vendor/asus" 
+          name="vendor_asus_X00TD.git" 
+          remote="monu70152" 
+          revision="arcana" />
+
+ <!-- Kernel Tree -->
+ <project path="kernel/asus/sdm660" 
+          name="android_kernel_asus_sdm660-1.git" 
+          remote="monu70152" 
+          revision="r6/hmp" />
+
+
+</manifest>

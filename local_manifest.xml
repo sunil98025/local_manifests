@@ -23,7 +23,7 @@
  <project path="kernel/xiaomi/veux-kernel" 
           name="device_xiaomi_veux-kernel" 
           remote="monu70152" 
-          revision="r6/hmp" />
+          revision="lineage-18.1" />
 
 
 </manifest>

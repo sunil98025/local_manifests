@@ -8,26 +8,20 @@
  <!-- Trees -->
 
  <!-- Device Tree -->
- <project path="device/asus/X00TD" 
-          name="device_asus_X00TD" 
+ <project path="device/xiaomi/veux" 
+          name="device_xiaomi_veux" 
           remote="monu70152" 
-          revision="arcana" /> 
+          revision="twelve" /> 
 
  <!-- Common Tree -->
- <project path="device/asus/sdm660-common" 
-          name="device_asus_sdm660-common" 
+ <project path="device/xiaomi/sm6375-common" 
+          name="device_xiaomi_sm6375-common" 
           remote="monu70152" 
-          revision="arcana" />
-
- <!-- Vendor Tree -->
- <project path="vendor/asus" 
-          name="vendor_asus_X00TD" 
-          remote="monu70152" 
-          revision="arcana" />
+          revision="twelve" />
 
  <!-- Kernel Tree -->
- <project path="kernel/asus/sdm660" 
-          name="android_kernel_asus_sdm660-1" 
+ <project path="kernel/xiaomi/veux-kernel" 
+          name="device_xiaomi_veux-kernel" 
           remote="monu70152" 
           revision="r6/hmp" />
 

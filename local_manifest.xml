@@ -2,28 +2,63 @@
 <manifest>
 
  <!-- Remotes -->
- <remote name="monu70152" 
-         fetch="https://github.com/monu70152" />
+ <remote name="sh" 
+         fetch="https://github.com/SharmagRit" />
+ <remote name="ki" 
+         fetch="https://github.com/kleidione" />
+ <remote name="re" 
+         fetch="https://github.com/renoir-development" />
+ <remote name="li" 
+         fetch="https://github.com/LineageOS" />
+ <remote name="sh2" 
+         fetch="https://gitlab.com/SharmagRit" />
 
  <!-- Trees -->
 
  <!-- Device Tree -->
  <project path="device/xiaomi/veux" 
           name="device_xiaomi_veux" 
-          remote="monu70152" 
-          revision="twelve" /> 
+          remote="sh" 
+          revision="12.1" /> 
 
  <!-- Common Tree -->
  <project path="device/xiaomi/sm6375-common" 
           name="device_xiaomi_sm6375-common" 
-          remote="monu70152" 
-          revision="twelve" />
+          remote="ki" 
+          revision="wip" />
 
  <!-- Kernel Tree -->
- <project path="kernel/xiaomi/veux-kernel" 
+ <project path="device/xiaomi/veux-kernel" 
           name="device_xiaomi_veux-kernel" 
-          remote="monu70152" 
+          remote="ki" 
           revision="lineage-18.1" />
 
+ <!-- Kernel Tree2 -->
+ <project path="kernel/xiaomi/sm6375" 
+          name="android_kernel_xiaomi_sm8350.git" 
+          remote="re" 
+          revision="staging/lineage-18.1 " />
+
+ <!-- Hardware -->
+ <project path="hardware/xiaomi" 
+          name="android_hardware_xiaomi" 
+          remote="li" 
+          revision="lineage-19.1" />
+
+ <!-- Vendor -->
+ <project path="vendor/xiaomi" 
+          name="proprietary_xiaomi_veux" 
+          remote="sh2" 
+          revision="twelve" />
+
+
+
+ <!-- misc -->
+ <remove-project name="hardware/qcom-caf/sm8350/display" />
+ <project path="vendor/qcom/opensource/commonsys/display"
+          name="android_hardware_qcom-caf_sm8350_display"
+          remote="ki"
+          revision="lineage-19.1" />
+ 
 
 </manifest>

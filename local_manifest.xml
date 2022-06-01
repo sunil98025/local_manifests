@@ -2,8 +2,6 @@
 <manifest>
 
  <!-- Remotes -->
- <remote name="sh" 
-         fetch="https://github.com/SharmagRit" />
  <remote name="ki" 
          fetch="https://github.com/kleidione" />
  <remote name="re" 
@@ -18,8 +16,8 @@
  <!-- Device Tree -->
  <project path="device/xiaomi/veux" 
           name="device_xiaomi_veux" 
-          remote="sh" 
-          revision="12.1" /> 
+          remote="ki" 
+          revision="twelve" /> 
 
  <!-- Common Tree -->
  <project path="device/xiaomi/sm6375-common" 

@@ -35,7 +35,7 @@
  <project path="kernel/xiaomi/sm6375" 
           name="android_kernel_xiaomi_sm8350.git" 
           remote="re" 
-          revision="staging/lineage-18.1 " />
+          revision="staging/lineage-18.1" />
 
  <!-- Hardware -->
  <project path="hardware/xiaomi" 

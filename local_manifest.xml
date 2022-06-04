@@ -50,13 +50,6 @@
           revision="twelve" />
 
 
-
- <!-- misc -->
- <remove-project name="hardware/qcom-caf/sm8350/display" />
- <project path="vendor/qcom/opensource/commonsys/display"
-          name="android_hardware_qcom-caf_sm8350_display"
-          remote="ki"
-          revision="lineage-19.1" />
  
 
 </manifest>

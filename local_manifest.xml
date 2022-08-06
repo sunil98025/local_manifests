@@ -2,54 +2,53 @@
 <manifest>
 
  <!-- Remotes -->
- <remote name="ki" 
-         fetch="https://github.com/kleidione" />
- <remote name="re" 
-         fetch="https://github.com/renoir-development" />
- <remote name="li" 
-         fetch="https://github.com/LineageOS" />
- <remote name="sh2" 
-         fetch="https://gitlab.com/SharmagRit" />
+ <remote name="sh" 
+         fetch="https://github.com/SharmagRit" />
 
  <!-- Trees -->
 
  <!-- Device Tree -->
  <project path="device/xiaomi/veux" 
           name="device_xiaomi_veux" 
-          remote="ki" 
-          revision="twelve" /> 
-
- <!-- Common Tree -->
- <project path="device/xiaomi/sm6375-common" 
-          name="device_xiaomi_sm6375-common" 
-          remote="ki" 
-          revision="wip" />
+          remote="sh" 
+          revision="rice" /> 
 
  <!-- Kernel Tree -->
  <project path="device/xiaomi/veux-kernel" 
           name="device_xiaomi_veux-kernel" 
-          remote="ki" 
-          revision="lineage-18.1" />
+          remote="sh" 
+          revision="12.1" />
 
  <!-- Kernel Tree2 -->
- <project path="kernel/xiaomi/sm6375" 
-          name="android_kernel_xiaomi_sm8350.git" 
-          remote="re" 
-          revision="staging/lineage-18.1" />
+ <project path="kernel/xiaomi/veux-headers" 
+          name="android_kernel_xiaomi_veux-headers" 
+          remote="sh" 
+          revision="12.1" />
 
  <!-- Hardware -->
  <project path="hardware/xiaomi" 
           name="android_hardware_xiaomi" 
-          remote="li" 
-          revision="lineage-19.1" />
+          remote="sh" 
+          revision="12.1" />
 
  <!-- Vendor -->
- <project path="vendor/xiaomi" 
-          name="proprietary_xiaomi_veux" 
-          remote="sh2" 
-          revision="twelve" />
+ <project path="vendor/xiaomi/veux" 
+          name="vendor_xiaomi_veux" 
+          remote="sh" 
+          revision="12.1" />
 
+<!-- Hals -->
+<remove-project name="LineageOS/android_hardware_qcom_display" />
+<project name="hardware_qcom-caf_sm8350_display" 
+         path="hardware/qcom-caf/sm8350/display"
+         remote="sh" 
+         revision="twelve" />
 
- 
+<remove-project name="hardware/qcom-caf/sm8350/audio" />
+<project name="hardware_qcom-caf_sm8350_audio" 
+         path="hardware/qcom-caf/sm8350/audio"
+         remote="sh" 
+         revision="twelve" />
+
 
 </manifest>

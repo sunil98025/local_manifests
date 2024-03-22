@@ -1,52 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
  <!-- Remotes -->
- <remote name="me" 
-         fetch="https://github.com/SharmagRit" />
- <remote name="me2" 
-         fetch="https://github.com/monu70152" />
- <remote name="gt" 
-         fetch="https://github.com" />
- <!-- Trees -->
+    <remote name="my"
+            fetch="https://github.com/monuohlyan70"
+            clone-depth="1" />
+    <remote name="snow"
+            fetch="https://github.com/AswinOP"
+            clone-depth="1" />
+     <remote name="cl"
+            fetch="https://gitlab.com/crdroidandroid" />
+ <!--Tree -->
+ <project path="device/xiaomi/veux" name="device_xiaomi_peux" remote="my" revision="fourteen" />
 
- <!-- Device Tree -->
- <project path="device/xiaomi/veux" 
-          name="android_device_xiaomi_veux" 
-          remote="me2" 
-          revision="cherish" /> 
-
- <!-- Kernel Tree -->
- <project path="device/xiaomi/veux-kernel" 
-          name="xiaomi-sm6375-devs/android_device_xiaomi_veux-kernel" 
-          remote="gt" 
-          revision="lineage-19.1" />
-
- <!-- Kernel Tree2 -->
- <project path="kernel/xiaomi/veux-headers" 
-          name="kernel_xiaomi_veux-headers" 
-          remote="me" 
-          revision="12.1" />
-
-
- <!-- Vendor -->
- <project path="vendor/xiaomi/veux" 
-          name="android_vendor_xiaomi_veux" 
-          remote="me" 
-          revision="main" />
-
- <!-- Hardware -->
- <project name="android_hardware_xiaomi"
-          path="hardware/xiaomi"
-          remote="me" 
-          revision="lineage-20.0" />
-
-<!-- Hals -->
-<remove-project name="LineageOS/android_hardware_qcom_display" />
-<project name="hardware_qcom-caf_sm8350_display" 
-         path="hardware/qcom-caf/sm8350/display"
-         remote="me" 
-         revision="twelve" />
-
-
+  <!-- Clang -->
+   <project path="prebuilts/clang/host/linux-x86/clang-r487747c" name="android_prebuilts_clang_host_linux-x86_clang-r487747c" remote="cl" revision="14.0" clone-depth="1" />
 </manifest>
